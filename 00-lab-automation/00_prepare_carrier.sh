@@ -22,6 +22,7 @@ docker container start dcf_ftp
 # Updating FW rules
 iptables -I INPUT 1 -p udp --sport 67:68 --dport 67:68 -j ACCEPT
 iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT
+iptables -I INPUT 1 -s 169.254.255.0/24 -i br0 -j ACCEPT
 iptables -I FORWARD 1 -s 169.254.255.0/24 -i br0 -j ACCEPT
 
 # Updating NAT rules
