@@ -9,6 +9,11 @@ In this blogpost the server is used as a management host. The following scripts 
 - `02_sr_lab.sh` launches Nokia VSR and Cisco IOS XRv for the Segment Routing lab:
 - `03_acl_lab.sh` launches Nokia VSR and Cisco IOS XRv for the Control Plane/Data Plane protection lab
 
+## Network topologies
+Each folder contains two topology files:
+- `topology_physical.txt` shows the connectivity of the Mellanox SN 2010 device to the server
+- `topology_logical.txt` describes the routing related to each particluar lab between PNF (Mellanox/Cumulus) and VNFs (Cisco IOS XRs / Nokia VSR)
+
 ## ZTP
 to be updated
 
