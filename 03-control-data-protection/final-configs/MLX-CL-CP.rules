@@ -1,0 +1,4 @@
+[iptables]
+-A INPUT --in-interface swp+ -p tcp --dport 22 -j DROP
+-A INPUT --in-interface swp+ -s 169.254.0.0/24 -d 169.254.0.0/24 -p tcp --dport 179 -j ACCEPT
+-A INPUT --in-interface swp+ -p tcp --dport 179 -j DROP

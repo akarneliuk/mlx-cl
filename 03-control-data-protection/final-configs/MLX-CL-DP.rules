@@ -1,0 +1,5 @@
+[iptables]
+-A FORWARD --in-interface swp+ -s 172.16.1.0/24 -d 172.16.1.0/24 -j ACCEPT
+-A FORWARD --in-interface swp+ -d 172.16.1.0/24 -j DROP
+-A FORWARD --in-interface swp+ -d 172.16.2.0/24 -p tcp --dport 80 -j ACCEPT
+-A FORWARD --in-interface swp+ -d 172.16.2.0/24 -j DROP
