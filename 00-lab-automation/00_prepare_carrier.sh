@@ -25,5 +25,8 @@ iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT 1 -s 169.254.255.0/24 -i br0 -j ACCEPT
 iptables -I FORWARD 1 -s 169.254.255.0/24 -i br0 -j ACCEPT
 
+ip6tables -I INPUT 1 -s fc00::/16 -j ACCEPT
+ip6tables -I FORWARD 1 -s fc00::/16 -j ACCEPT
+
 # Updating NAT rules
 iptables -t nat -A POSTROUTING -s 169.254.255.0/24 -o enp2s0f0 -j MASQUERADE

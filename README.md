@@ -22,8 +22,13 @@ In the folder `02-segment-routing` you find the configuration files for Segment 
 - The folder `initial-configs` contains the starting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
 - The folder `final-configs` contains the resulting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
 
-## Control Plane / Data Plane Protection
-In the folder `03-control-data-protection` you find the configuration files for Security lab:
+## Control Plane / Data Plane Protection for IPv4
+In the folder `03-control-data-protection` you find the configuration files for Security lab for IPv4:
+- The folder `initial-configs` contains the starting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
+- The folder `final-configs` contains the resulting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
+
+## Control Plane / Data Plane Protection for IPv6
+In the folder `04-ipv6-control-data-plane-protection` you find the configuration files for Security lab for IPv6:
 - The folder `initial-configs` contains the starting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
 - The folder `final-configs` contains the resulting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
 
