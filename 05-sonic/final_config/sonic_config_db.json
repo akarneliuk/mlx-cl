@@ -1,0 +1,93 @@
+{
+    "CRM": {
+        "Config": {
+            "acl_counter_high_threshold": "85", 
+            "acl_counter_low_threshold": "70", 
+            "acl_counter_threshold_type": "percentage", 
+            "acl_entry_high_threshold": "85", 
+            "acl_entry_low_threshold": "70", 
+            "acl_entry_threshold_type": "percentage", 
+            "acl_group_high_threshold": "85", 
+            "acl_group_low_threshold": "70", 
+            "acl_group_threshold_type": "percentage", 
+            "acl_table_high_threshold": "85", 
+            "acl_table_low_threshold": "70", 
+            "acl_table_threshold_type": "percentage", 
+            "fdb_entry_high_threshold": "85", 
+            "fdb_entry_low_threshold": "70", 
+            "fdb_entry_threshold_type": "percentage", 
+            "ipv4_neighbor_high_threshold": "85", 
+            "ipv4_neighbor_low_threshold": "70", 
+            "ipv4_neighbor_threshold_type": "percentage", 
+            "ipv4_nexthop_high_threshold": "85", 
+            "ipv4_nexthop_low_threshold": "70", 
+            "ipv4_nexthop_threshold_type": "percentage", 
+            "ipv4_route_high_threshold": "85", 
+            "ipv4_route_low_threshold": "70", 
+            "ipv4_route_threshold_type": "percentage", 
+            "ipv6_neighbor_high_threshold": "85", 
+            "ipv6_neighbor_low_threshold": "70", 
+            "ipv6_neighbor_threshold_type": "percentage", 
+            "ipv6_nexthop_high_threshold": "85", 
+            "ipv6_nexthop_low_threshold": "70", 
+            "ipv6_nexthop_threshold_type": "percentage", 
+            "ipv6_route_high_threshold": "85", 
+            "ipv6_route_low_threshold": "70", 
+            "ipv6_route_threshold_type": "percentage", 
+            "nexthop_group_high_threshold": "85", 
+            "nexthop_group_low_threshold": "70", 
+            "nexthop_group_member_high_threshold": "85", 
+            "nexthop_group_member_low_threshold": "70", 
+            "nexthop_group_member_threshold_type": "percentage", 
+            "nexthop_group_threshold_type": "percentage", 
+            "polling_interval": "300"
+        }
+    }, 
+    "DEVICE_METADATA": {
+        "localhost": {
+            "default_bgp_status": "up", 
+            "default_pfcwd_status": "disable", 
+            "hostname": "mlx-sonic", 
+            "hwsku": "ACS-MSN2010", 
+            "mac": "b8:59:9f:62:46:80",
+	    "bgp_asn": 65002,
+            "platform": "x86_64-mlnx_msn2010-r0", 
+            "type": "LeafRouter"
+        }
+    },
+    "PORT": {
+        "Ethernet0": {
+            "admin_status": "up", 
+      	    "alias": "Ethernet1",
+	    "lanes": "0",
+	    "mtu": "9216",
+	    "speed": "10000"
+	}, 
+	"Ethernet24": {
+	    "admin_status": "up", 
+      	    "alias": "Ethernet7",
+	    "lanes": "24",
+	    "mtu": "9216",
+	    "speed": "10000"
+	} 
+    },
+    "LOOPBACK_INTERFACE": {
+        "Loopback0|10.0.0.2/32": {},
+	"Loopback0|FC00::10:0:0:2/128": {}
+    },
+    "INTERFACE": {
+        "Ethernet0|169.254.0.1/31": {},
+	"Ethernet24|169.254.0.2/31": {}
+    },
+    "BGP_NEIGHBOR": {
+	"169.254.0.0": {
+    	    "local_addr": "169.254.0.1",
+	    "asn": 65001
+	},
+	"169.254.0.3": {
+            "local_addr": "169.254.0.2",
+	    "asn": 65003
+	}
+    }
+}
+

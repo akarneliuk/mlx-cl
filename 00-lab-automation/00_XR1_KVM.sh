@@ -1,14 +1,14 @@
 virt-install \
-  --name=XR1 \
-  --description "XR1 VM" \
+  --name=XR22 \
+  --description "XR22 VM" \
   --os-type=Linux \
   --ram=3072 \
   --vcpus=1 \
   --boot hd,cdrom,menu=on \
-  --disk path=/var/lib/libvirt/images/XR1.qcow2,bus=ide,size=4 \
+  --disk path=/var/lib/libvirt/images/XR22.qcow2,bus=ide,size=4 \
   --import \
   --graphics vnc \
   --serial tcp,host=0.0.0.0:3321,mode=bind,protocol=telnet \
-  --network=bridge:br0,mac=52:54:00:09:02:00,model=virtio \
-  --network=bridge:br2,mac=52:54:00:09:02:01,model=virtio \
-  --network=bridge:br3,mac=52:54:00:09:02:02,model=virtio
+  --network=bridge:br0,mac=52:54:00:22:02:00,model=virtio \
+  --network=bridge:br2,mac=52:54:00:22:02:01,model=virtio \
+  --network=bridge:br3,mac=52:54:00:22:02:02,model=virtio

@@ -7,8 +7,8 @@ brctl addbr br4
 ifconfig br4 up
 
 # Starting VMs
-virsh start SR1
-virsh start XR1
+virsh start SR11
+virsh start XR22
 
 # Updating FW rules
 iptables -I FORWARD 1 -s 10.0.0.0/8 -d 10.0.0.0/8 -j ACCEPT
