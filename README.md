@@ -1,4 +1,4 @@
-# Mellanox/Cumulus labs
+# Mellanox with Cumulus Linux and MS Azure SONiC labs
 This repo contains the details for the articles about Mellanox SN 2010 running Cumulus Linux at karneliuk.com.
 
 ## Host preparation
@@ -31,6 +31,10 @@ In the folder `03-control-data-protection` you find the configuration files for 
 In the folder `04-ipv6-control-data-plane-protection` you find the configuration files for Security lab for IPv6:
 - The folder `initial-configs` contains the starting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
 - The folder `final-configs` contains the resulting configuration files for Cisco IOS XR, Nokia SR OS and Cumulus Linux
+
+## Microsoft Azure SONiC
+In the folder `05-sonic` you find the configuration files for Microsoft Azure SONiC lab:
+- The folder `final-configs` contains the resulting configuration files for Cisco IOS XR, Nokia SR OS and Microsoft Azure SONiC
 
 # Do you want to automate network like a profi?
 Join the network automation course: http://training.karneliuk.com
